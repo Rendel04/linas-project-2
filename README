@@ -1,0 +1,30 @@
+# Linas Project 2 — Kabankalan Catholic College Landing Page
+
+This single-page landing page is based directly on the supplied **Mentor** Bootstrap education template. It retains the template's page structure, Bootstrap grid and component classes, `assets/css/main.css`, `assets/js/main.js`, local Bootstrap/vendor folders, and image-directory conventions. The placeholder institution, programs, photos, colors, links, and contact details have been customized for Kabankalan Catholic College, Inc.
+
+## Project structure
+
+- `index.html` is the customized Mentor homepage and landing page.
+- `assets/css/main.css` is the supplied Mentor stylesheet with KCC brand and component overrides appended.
+- `assets/js/main.js` adapts the Mentor navigation, scroll-to-top, preloader, and AOS behavior for the KCC page.
+- `assets/vendor/` contains the local Bootstrap, Bootstrap Icons, AOS, and other supplied vendor files.
+- `assets/img/` contains the official KCC seal and official KCC campus-event photos arranged in the template's image folders.
+- `manus-routes.json` declares the single homepage route for the managed preview.
+
+## Run locally
+
+From the repository root:
+
+```sh
+python3 -m http.server 3000 --bind 0.0.0.0 --directory linas-project-2
+```
+
+Then open `http://localhost:3000/`.
+
+## GitHub Pages
+
+The repository-root workflow at `.github/workflows/pages.yml` publishes the contents of this folder through GitHub Actions. After the workflow is pushed, select **GitHub Actions** as the Pages source in the repository's Settings. The page uses the local template vendor assets, so Bootstrap styles and scripts do not depend on a CDN.
+
+## Sources and attribution
+
+KCC institutional facts, programs, mission text, contact details, seal, and event photographs are adapted from [the official KCC website](https://kcc.edu.ph/). Event photos depict CMAT Pinning 2025 and the Criminology Reception Rites. The supplied Mentor template's BootstrapMade attribution links remain in the footer.
